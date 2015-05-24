@@ -123,6 +123,7 @@ ggplot(top_15_inj, aes(x = EventType, y = fatalities)) + geom_histogram(stat = "
             ylab("number of fatalities") + 
             ggtitle("Fatalities per type")
 ```
+![rplot1](https://cloud.githubusercontent.com/assets/10600024/7790129/e2e4ce3e-026a-11e5-8226-4e15be004877.png)
 
 Type of events have the greatest economic consequences
 
