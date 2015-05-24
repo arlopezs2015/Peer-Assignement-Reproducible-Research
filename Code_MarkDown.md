@@ -147,6 +147,7 @@ ggplot(top_15_dmg, aes(x = EventType, y = property)) + geom_histogram(stat = "id
 
 Analogous to the property damage, a crop is similar in the events tornado flash flood
 
+![rplot3](https://cloud.githubusercontent.com/assets/10600024/7790141/9a30ba58-026b-11e5-8425-4b7e835a003c.png)
 ```{r, echo=FALSE}
 ggplot(top_15_dmg, aes(x = EventType, y = crop)) + geom_histogram(stat = "identity", fill = "orange") + 
             theme(axis.text.x = element_text(angle = 90, hjust = 1)) + 
