@@ -24,8 +24,8 @@ The events in the database start in the year 1950 and end in November 2011. In t
 
 First charge the libraries required
 ```{r, echo=FALSE}
-##install.packages("dplyr")
-##install.packages("data.table")
+install.packages("dplyr")
+install.packages("data.table")
 library(dplyr)
 library(plyr)
 library(stringr)
@@ -38,11 +38,11 @@ summary(cars)
 Then, download and unzip the file
 
 ```{r, echo=FALSE}
-##if(!file.exists("./data")){dir.create("./data")}
-##fileurl <- "http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2"
+if(!file.exists("./data")){dir.create("./data")}
+fileurl <- "http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2"
 setwd("~/data")
 arch<-file.path(getwd(),"repdata-data-StormData.csv.bz2")  
-##download.file(fileurl,arch)
+download.file(fileurl,arch)
 data <- read.csv(bzfile(arch), stringsAsFactors = FALSE)
 data <- data.table(read.table(bzfile(arch), header = TRUE, sep = ",",stringsAsFactors = FALSE))
 
