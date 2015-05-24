@@ -143,6 +143,7 @@ ggplot(top_15_dmg, aes(x = EventType, y = property)) + geom_histogram(stat = "id
             ylab("property damage") + 
             ggtitle("Damage per event")
 ```
+![rplot2](https://cloud.githubusercontent.com/assets/10600024/7790136/67849174-026b-11e5-9278-ecc17a1cf9e7.png)
 
 Analogous to the property damage, a crop is similar in the events tornado flash flood
 
